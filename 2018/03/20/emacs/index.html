@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="帮助q 退出, u 前一节 p 下一节C-h ?    帮助系统的帮助C-h t    help-with-tutorial Emacs 快速指南C-h r    info-emacs-manual Emacs使用手册C-h i    info Emacs说明C-h a    apropos-command 搜索命令C-h v    describe-variable 查看变量说明C-h f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/03/20/emacs/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="帮助q 退出, u 前一节 p 下一节C-h ?    帮助系统的帮助C-h t    help-with-tutorial Emacs 快速指南C-h r    info-emacs-manual Emacs使用手册C-h i    info Emacs说明C-h a    apropos-command 搜索命令C-h v    describe-variable 查看变量说明C-h f">
+<meta property="og:updated_time" content="2018-03-20T13:54:12.821Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="帮助q 退出, u 前一节 p 下一节C-h ?    帮助系统的帮助C-h t    help-with-tutorial Emacs 快速指南C-h r    info-emacs-manual Emacs使用手册C-h i    info Emacs说明C-h a    apropos-command 搜索命令C-h v    describe-variable 查看变量说明C-h f">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/03/20/emacs/"/>
+
+
+
+
+
+  <title> | Hexo</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/20/emacs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="YiboDai">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-20T21:54:12+08:00">
+                2018-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h1><p>q 退出, u 前一节 p 下一节<br>C-h ?    帮助系统的帮助<br>C-h t    help-with-tutorial Emacs 快速指南<br>C-h r    info-emacs-manual Emacs使用手册<br>C-h i    info Emacs说明<br>C-h a    apropos-command 搜索命令<br>C-h v    describe-variable 查看变量说明<br>C-h f    describe-function 查看函数说明<br>C-h m    describe-mode 查看当前mode的相关文档，包含mode中的命令、快捷键<br>C-h k    KEYS describe-key 查看快捷键对应的命令及其简要说明，比如C-h k C-x C-c<br>C-h c    KEYS describe-key-briefly 查看键绑定说明<br>C-h w    where-is 查看某个命令对应的快捷键<br>C-h b    describe-bindings 查看当前buffer所有的快捷键列表<br>KEYS C-h 查看当前buffer中以某个快捷键序列开头的快捷键列表，比如C-c C-h</p>
+<h1 id="窗口"><a href="#窗口" class="headerlink" title="窗口"></a>窗口</h1><p>C-z 挂起当前Window (fg 恢复)<br>C-x 0    关闭当前window<br>C-x 1   关闭其他window<br>C-x 2    在下面分割一个window出来<br>C-x 3    在右边创建一个window<br>C-x 4 b BUFNAME:在另一个窗口中打开新BUF<br>C-x 4 f FILENAME:在另一个窗口中打开新文件<br>C-x 4 d DIRECTORY：<br>C-x 4 . 在另一个窗口中查找函数定义<br>C-x 4 r filename：在另一个窗口中打开新文件（只读）</p>
+<h1 id="buffer"><a href="#buffer" class="headerlink" title="buffer"></a>buffer</h1><h1 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h1><p>C-x c-0 调整字体大小</p>
+<h1 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h1><p>C-x C-f   打开文件<br>C-x C-v   在当前缓冲区打开另一个文件<br>C-x C-r   只读打开文件<br>C-x C-s   保存当前文件<br>C-x s     保存所有文件<br>C-x C-w   另存为文件<br>C-x d     dired<br>C-x C-d   获取文件列表（简洁)<br>C-x RET r 以指定编码读取文件<br>C-x RET f 以指定编码保存文件</p>
+<h1 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h1><p>C-f     向右移动一个字符<br>M-f     向右移动一个词</p>
+<p>C-b     向左移动一个字符  【对中文是移动到下一个标点符号】<br>M-b     向左移动一个词【对中文是移动到上一个标点符号】</p>
+<p>C-n     移动到下一行<br>C-p     移动到上一行</p>
+<p>C-a     移动到行首<br>C-e     移动到行尾</p>
+<p>M-a     移动到句首<br>M-e     移动到句尾</p>
+<p>M-}     移动到上一段<br>M-{     移动到下一段</p>
+<p>M-&gt;     页尾<br>M-&lt;     页首</p>
+<p>C-M-a 　函数<br>C-M-e</p>
+<p>M-r     页中, 页首, 页尾跳转</p>
+<p>M-m     移动到本行第一个非空白字符的位置</p>
+<h1 id="跳转"><a href="#跳转" class="headerlink" title="跳转"></a>跳转</h1><p>C-x C-x　回到上一个Mark的位置，如可以回到C-s的位置</p>
+<h1 id="编辑"><a href="#编辑" class="headerlink" title="编辑"></a>编辑</h1><h2 id="撤销重做"><a href="#撤销重做" class="headerlink" title="撤销重做"></a>撤销重做</h2><p>C-/     撤销(每插入20个字符，视为一个 undo 的单位)<br>C-g C-/ redo<br>C-x u   undo-tree<br>  p 、 n 上下移动<br>  b 、 f 左右切换<br>  t 显示时间戳<br>  d 打开diff，选定需要的状态后<br>  q 退出</p>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><p><del>        删除光标前的一个字符<br>C-d          删除光标后的一个字符</del></p>
+<p>M-<del>      移除光标前的一个词<br>M-d          移除光标后的一个词</del></p>
+<p>C-k          移除从光标到“行尾”间的字符</p>
+<p>M-k          删除光标后面的句子<br>C-x <del>    删除光标前面的句子</del></p>
+<p>M-j(自定义)  剪切行</p>
+<p>C-x C-o      删除空白行</p>
+<h2 id="复制-剪切，粘贴"><a href="#复制-剪切，粘贴" class="headerlink" title="复制,剪切，粘贴"></a>复制,剪切，粘贴</h2><p>C-x C-f         寻找文件。<br>C-x C-s         保存文件。<br>C-x C-b         列出缓冲区。<br>C-x C-c         离开 Emacs。<br>C-x u           撤销。<br>C-j(自定义)     复制行</p>
+<h2 id="标记"><a href="#标记" class="headerlink" title="标记"></a>标记</h2><p>M-h 标记段落<br>C-x C-p 标记页面<br>C-x h 标记buffer<br>C-M-h 标记函数</p>
+<p>C-x w . 高亮符号<br>C-x w r 取消高亮符号</p>
+<h2 id="交换"><a href="#交换" class="headerlink" title="交换"></a>交换</h2><p>C-t 交换字符<br>M-t 交换单词<br>C-x C-t 交换两个文本行的位置(当前行和上一行）</p>
+<h1 id="列编辑"><a href="#列编辑" class="headerlink" title="列编辑"></a>列编辑</h1><p>C-x r M-w 复制<br>C-x r k 复制并删除<br>C-x r d 删除(不留空白)<br>C-x r c 删除(留空白), clear-rectangle<br>C-x r o 插入空白的方格<br>C-x r y 粘贴(注意: 只需要把光标放在第一行即可)<br>C-x r t 替换/插入</p>
+<p>C-x r r 选定内容复制到寄存器(记住输入的寄存器名字)<br>C-x r i 复制寄存器内容</p>
+<p>C-x r N [M-x: set-mark-command] 插入递增的数字<br>插入字母(从A开始)<br>第一步: C-u [M-x: set-mark-command]<br>第二步: C-x r N [M-x: rectangle-number-lines]<br>第三步: 把%2d 改为 %c<br>第四步: 输入字符asscii码(A:65, a:97)</p>
+<p>C-x <tab>: 整行移动<br>第一步:选择区域<br>第二步: C-x <tab><br>第三步: 左右方向键移动</tab></tab></p>
+<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><h2 id="字符查找"><a href="#字符查找" class="headerlink" title="字符查找"></a>字符查找</h2><p>C-s: 向前查找<br>C-r: 向后查找<br>C-s C-s: 恢复上次查找<br>C-r C-r: 恢复上次查找<br>进入C-s后的命令:<br>C-s, M-n(M-p): 从查找队列中恢复历史查找<br>M-c: 快速切换大小写敏感<br>C-j: 查询字符串中输入换行<br>C-w: 使用光标后面的单词查找(C-w可继续向后增加单词)<br>M-s C-e: 使用光标到行尾的内容查找<br>M-%: 交互替换<br>M-e: 编辑查找字符串 (使用C-s,C-r恢复), 可使用C-y把光标后内容复制到查找区<br>M-y: 把kill环中的内容复制到查找区</p>
+<h2 id="文件查找"><a href="#文件查找" class="headerlink" title="文件查找"></a>文件查找</h2><h1 id="文件-1"><a href="#文件-1" class="headerlink" title="文件"></a>文件</h1><p>C-x C-v　在当前缓冲区打开另一个文件<br>C-x C-w　另存为文件</p>
+<h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><p>M-x replace-string RET oldstring RET newstring RET<br>M-% 响应式替换</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>C-c C-c    批量注释选中代码<br>C-u C-c C-c    取消注释<br>M-. 查找定义</p>
+<h2 id="扩展命令"><a href="#扩展命令" class="headerlink" title="扩展命令"></a>扩展命令</h2><p>C-x     字符扩展。  C-x 之后输入另一个字符或者组合键。<br>M-x     命令名扩展。M-x 之后输入一个命令名。</p>
+<h1 id="样式"><a href="#样式" class="headerlink" title="样式"></a>样式</h1><p>C–: 缩小字体<br>c-+: 增大字体</p>
+<h1 id="mode"><a href="#mode" class="headerlink" title="mode"></a>mode</h1><h2 id="dired-mode"><a href="#dired-mode" class="headerlink" title="dired mode"></a>dired mode</h2><p>M-x dired 或者 C-x d： 进入<br>C-x C-f 创建文件<br>s ;;按照时间排序</p>
+<h3 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h3><p>v 只读模式查看文件<br>   q 退出只读模式并关闭文件<br>f 进入文本编辑模式</p>
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><p>d 加上待删除标记<br>u 取消待删除标记,其实也可取消其他标记<br>x 删除标记的所有文件</p>
+<p>#所有自动保存文件加上待删除标记<br>~ 给所有备份文件加上待删除标记<br>D 大D立即删除指定文件<br>C 大C用于复制该文件到一个目录中<br>R 重命名文件，也可用于移动文件<br>Z (dired-do-compress)压缩与解压缩<br>= 比较改文件与另一个待会输入的文件，类同于UNIX中的diff命令</p>
+<h1 id="Emacs性能优化"><a href="#Emacs性能优化" class="headerlink" title="Emacs性能优化"></a>Emacs性能优化</h1><h2 id="诊断"><a href="#诊断" class="headerlink" title="诊断"></a>诊断</h2><p>M-x: profiler-*<br>profiler-start<br>profiler-report<br>profiler-stop</p>
+<h1 id="Package"><a href="#Package" class="headerlink" title="Package"></a>Package</h1><p>melpa:<a href="http://melpa.org/#/getting-started" target="_blank" rel="noopener">http://melpa.org/#/getting-started</a></p>
+<h2 id="auto-complete"><a href="#auto-complete" class="headerlink" title="auto-complete"></a>auto-complete</h2><p>M-x package-list-packages<br>M-x package-refresh-contents and M-x package-install auto-complete<br>maunal: <a href="https://github.com/auto-complete/auto-complete/blob/master/doc/manual.md" target="_blank" rel="noopener">https://github.com/auto-complete/auto-complete/blob/master/doc/manual.md</a></p>
+<h2 id="E-CTAG"><a href="#E-CTAG" class="headerlink" title="E/CTAG"></a>E/CTAG</h2><h2 id="ggtags"><a href="#ggtags" class="headerlink" title="ggtags"></a>ggtags</h2><h3 id="exuberant-ctags"><a href="#exuberant-ctags" class="headerlink" title="exuberant ctags"></a>exuberant ctags</h3><p>exuberant ctags:<a href="https://sourceforge.net/projects/ctags，注意这不是和emacs自带的ctags" target="_blank" rel="noopener">https://sourceforge.net/projects/ctags，注意这不是和emacs自带的ctags</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/opt/ctags --with-exuberant-ctags=/usr/local/bin/ctags</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
+<h3 id="GNU-global"><a href="#GNU-global" class="headerlink" title="GNU global"></a>GNU global</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget http://tamacom.com/global/global-6.5.7.tar.gz</span><br><span class="line">sudo apt-get -y install ncurses-dev</span><br><span class="line">tar -zxvf global-6.5.7.tar.gz</span><br><span class="line"></span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<p>如果要使用exuberant ctags 参考:global 源码下的’plugin-factory/PLUGIN_HOWTO.pygments’中的说明</p>
+<h3 id="pygments"><a href="#pygments" class="headerlink" title="pygments"></a>pygments</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">pip install pygments</span><br><span class="line">apt install libtool-bin</span><br><span class="line">git clone https://github.com/yoshizow/global-pygments-plugin.git</span><br><span class="line">cd global-pygments-plugin/</span><br><span class="line">sh reconf.sh</span><br><span class="line">./configure --prefix=/opt/ctags --with-exuberant-ctags=/usr/local/bin/ctags</span><br><span class="line">make &amp;&amp; make install</span><br><span class="line">pcp sample.globalrc $HOME/.globalrc</span><br></pre></td></tr></table></figure>
+<h3 id="ggtags-install"><a href="#ggtags-install" class="headerlink" title="ggtags install"></a>ggtags install</h3><p>M-x package-install RET ggtags RET</p>
+<h3 id="config"><a href="#config" class="headerlink" title="config"></a>config</h3><p>(add-hook ‘c-mode-common-hook<br>          (lambda ()<br>            (when (derived-mode-p ‘c-mode ‘c++-mode ‘java-mode)<br>              (ggtags-mode 1))))</p>
+<h1 id="Emacs-github-blog"><a href="#Emacs-github-blog" class="headerlink" title="Emacs github blog"></a>Emacs github blog</h1><p><a href="https://jgkamat.github.io/blog/website1.html" target="_blank" rel="noopener">https://jgkamat.github.io/blog/website1.html</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">YiboDai</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">Artikel</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#帮助"><span class="nav-number">1.</span> <span class="nav-text">帮助</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#窗口"><span class="nav-number">2.</span> <span class="nav-text">窗口</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#buffer"><span class="nav-number">3.</span> <span class="nav-text">buffer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#外观"><span class="nav-number">4.</span> <span class="nav-text">外观</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件"><span class="nav-number">5.</span> <span class="nav-text">文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#移动"><span class="nav-number">6.</span> <span class="nav-text">移动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#跳转"><span class="nav-number">7.</span> <span class="nav-text">跳转</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编辑"><span class="nav-number">8.</span> <span class="nav-text">编辑</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销重做"><span class="nav-number">8.1.</span> <span class="nav-text">撤销重做</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除"><span class="nav-number">8.2.</span> <span class="nav-text">删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复制-剪切，粘贴"><span class="nav-number">8.3.</span> <span class="nav-text">复制,剪切，粘贴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标记"><span class="nav-number">8.4.</span> <span class="nav-text">标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#交换"><span class="nav-number">8.5.</span> <span class="nav-text">交换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列编辑"><span class="nav-number">9.</span> <span class="nav-text">列编辑</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查找"><span class="nav-number">10.</span> <span class="nav-text">查找</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#字符查找"><span class="nav-number">10.1.</span> <span class="nav-text">字符查找</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件查找"><span class="nav-number">10.2.</span> <span class="nav-text">文件查找</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件-1"><span class="nav-number">11.</span> <span class="nav-text">文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#替换"><span class="nav-number">11.1.</span> <span class="nav-text">替换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">12.</span> <span class="nav-text">代码</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展命令"><span class="nav-number">12.1.</span> <span class="nav-text">扩展命令</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样式"><span class="nav-number">13.</span> <span class="nav-text">样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mode"><span class="nav-number">14.</span> <span class="nav-text">mode</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#dired-mode"><span class="nav-number">14.1.</span> <span class="nav-text">dired mode</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查看文件内容"><span class="nav-number">14.1.1.</span> <span class="nav-text">查看文件内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件操作"><span class="nav-number">14.1.2.</span> <span class="nav-text">文件操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Emacs性能优化"><span class="nav-number">15.</span> <span class="nav-text">Emacs性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#诊断"><span class="nav-number">15.1.</span> <span class="nav-text">诊断</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Package"><span class="nav-number">16.</span> <span class="nav-text">Package</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#auto-complete"><span class="nav-number">16.1.</span> <span class="nav-text">auto-complete</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E-CTAG"><span class="nav-number">16.2.</span> <span class="nav-text">E/CTAG</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ggtags"><span class="nav-number">16.3.</span> <span class="nav-text">ggtags</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#exuberant-ctags"><span class="nav-number">16.3.1.</span> <span class="nav-text">exuberant ctags</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GNU-global"><span class="nav-number">16.3.2.</span> <span class="nav-text">GNU global</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pygments"><span class="nav-number">16.3.3.</span> <span class="nav-text">pygments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ggtags-install"><span class="nav-number">16.3.4.</span> <span class="nav-text">ggtags install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#config"><span class="nav-number">16.3.5.</span> <span class="nav-text">config</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Emacs-github-blog"><span class="nav-number">17.</span> <span class="nav-text">Emacs github blog</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">YiboDai</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
